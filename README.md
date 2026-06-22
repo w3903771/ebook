@@ -9,9 +9,11 @@
 
 ## 学科
 
-| 学科 | 站点 | 内容 |
-|---|---|---|
-| 量化投资 | [quant.ebook.ttzg.site](https://quant.ebook.ttzg.site/) | [教学指南](https://quant.ebook.ttzg.site/guide/) · [技术综述](https://quant.ebook.ttzg.site/survey/) |
+| 学科 | 站点 | 源码仓库 | 内容 |
+|---|---|---|---|
+| 量化投资 | [quant.ebook.ttzg.site](https://quant.ebook.ttzg.site/) | [w3903771/quant](https://github.com/w3903771/quant) | [教学指南](https://quant.ebook.ttzg.site/guide/) · [技术综述](https://quant.ebook.ttzg.site/survey/) |
+
+> 本门户站源码：[w3903771/ebook](https://github.com/w3903771/ebook)。
 
 更多学科采用相同的「综述 + 指南」双书结构，陆续上线。
 
