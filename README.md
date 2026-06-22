@@ -1,19 +1,18 @@
-# ebook —— 电子书门户
+# ttzg · 电子书库
 
-`ebook.ttzg.site` 的源码：一个纯静态单页（`index.html`），列出所有学科，每个学科链到各自的子域名站点。
+[**ebook.ttzg.site**](https://ebook.ttzg.site/) —— 个人学习用的在线电子书库，按**学科**组织。
 
-## 结构
+每个学科提供两份互补读物：
 
-- `index.html` —— 门户单页（学科卡片网格）
-- `CNAME` —— 自定义域名 `ebook.ttzg.site`
+- 一份**技术综述** —— 看脉络、看原理、看全局地图（回答「为什么」）。
+- 一份**可运行的教学指南** —— 动手实现、跑得通（回答「怎么做」）。
 
-## 部署（GitHub Pages，从分支部署，无需构建）
+## 学科
 
-1. 推送到 GitHub 仓库 `w3903771/ebook` 的 `main` 分支。
-2. 仓库 **Settings → Pages → Build and deployment → Source** 选 **Deploy from a branch**，分支 `main`、目录 `/ (root)`。
-3. **Custom domain** 填 `ebook.ttzg.site`（`CNAME` 文件已带），勾 **Enforce HTTPS**。
-4. DNS 在 `ttzg.site` 加：`ebook` CNAME → `w3903771.github.io`。
+| 学科 | 站点 | 内容 |
+|---|---|---|
+| 量化投资 | [quant.ebook.ttzg.site](https://quant.ebook.ttzg.site/) | [教学指南](https://quant.ebook.ttzg.site/guide/) · [技术综述](https://quant.ebook.ttzg.site/survey/) |
 
-## 新增一个学科
+更多学科采用相同的「综述 + 指南」双书结构，陆续上线。
 
-复制 `index.html` 里的 `<a class="card">` 区块，改学科名、简介与链接（指向 `<学科>.ebook.ttzg.site`）即可。各学科站的搭建见 `quant` 仓库的 `DEPLOY.md`。
+> 个人学习用 · 内容仅供学习研究，不构成任何投资建议。
