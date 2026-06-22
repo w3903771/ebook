@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  电子书门户 —— 部署后位于 https://ebook.ttzg.site/
+  这是一个纯静态单页：列出所有学科，每个学科链到各自的子域名站点。
+  新增学科：复制下面 <a class="card"> 区块，改文案与三个链接即可。
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ttzg · 电子书库</title>
+  <meta name="description" content="个人学习电子书库：按学科组织，每个学科含一份技术综述与一份可运行教学指南。">
+  <style>
+    :root { --fg:#1b2430; --muted:#5b6675; --line:#e6e9ef; --a1:#3f51b5; --a2:#00897b; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+           color:var(--fg); background:#f7f8fa; line-height:1.7; }
+    .wrap { max-width:920px; margin:0 auto; padding:64px 24px 80px; }
+    header h1 { font-size:2.1rem; margin:0 0 .4rem; }
+    header p { color:var(--muted); font-size:1.05rem; margin:.2rem 0 0; }
+    .subjects { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:44px 0 28px; }
+    @media (max-width:640px){ .subjects{ grid-template-columns:1fr; } }
+    .card { display:block; text-decoration:none; color:inherit; background:#fff; border:1px solid var(--line);
+            border-radius:14px; padding:24px; transition:transform .12s ease, box-shadow .12s ease; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 10px 28px rgba(20,30,50,.10); }
+    .card h2 { margin:.1rem 0 .4rem; font-size:1.3rem; }
+    .card p { color:var(--muted); margin:0 0 14px; font-size:.95rem; }
+    .links { display:flex; gap:10px; }
+    .links span { font-size:.85rem; padding:4px 12px; border-radius:999px; background:#eef0f7; color:var(--a1); }
+    .links span.s { background:#e6f4f1; color:var(--a2); }
+    .soon { border-style:dashed; opacity:.7; }
+    .soon h2 { color:var(--muted); }
+    .note { color:var(--muted); font-size:.86rem; border-top:1px solid var(--line); padding-top:18px; margin-top:36px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>ttzg · 电子书库</h1>
+      <p>按学科组织的个人学习电子书。每个学科 = 一份看「为什么」的技术综述 + 一份学「怎么做」的可运行教学指南。</p>
+    </header>
+
+    <div class="subjects">
+      <!-- 学科：量化投资 -->
+      <a class="card" href="https://quant.ebook.ttzg.site/">
+        <h2>量化投资 →</h2>
+        <p>从传统机器学习到深度学习、强化学习、大模型与 Agent：完整技术脉络 + 可运行的 Python 实现。</p>
+        <span class="links">
+          <span>教学指南</span>
+          <span class="s">技术综述</span>
+        </span>
+      </a>
+
+      <!-- 占位：后续学科 -->
+      <div class="card soon">
+        <h2>更多学科</h2>
+        <p>同样的「综述 + 指南」双书结构，陆续上线。</p>
+      </div>
+    </div>
+
+    <p class="note">个人学习用 · 内容仅供学习研究，不构成任何投资建议。</p>
+  </div>
+</body>
+</html>
